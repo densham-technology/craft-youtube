@@ -1,0 +1,56 @@
+{
+    "name": "densham-technology/craft-youtube",
+    "description": "",
+    "type": "craft-plugin",
+    "version": "0.1.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "craft-youtube"
+    ],
+    "support": {
+        "docs": "https://github.com/densham-technology/craft-youtube/blob/master/README.md",
+        "issues": "https://github.com/densham-technology/craft-youtube/issues"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Densham Technology",
+            "homepage": "https://densham.technology"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0",
+        "google/apiclient": "^2.12.1"
+    },
+    "require-dev": {
+      "craftcms/cms": "^3.2.0",
+      "codeception/codeception": "^3.0",
+      "vlucas/phpdotenv": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "denshamtechnology\\youtube\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "YouTube",
+        "handle": "youtube",
+        "developer": "Densham Technology",
+        "developerUrl": "https://densham.technology",
+        "documentationUrl": "https://github.com/densham-technology/craft-youtube/blob/master/README.md",
+        "changelogUrl": "https://github.com/densham-technology/craft-youtube/CHANGELOG.md",
+        "components": {
+            "videos": "denshamtechnology\\youtube\\services\\Videos"
+        },
+        "class": "denshamtechnology\\youtube\\YouTube"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
+    }
+}

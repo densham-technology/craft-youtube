@@ -1,0 +1,14 @@
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    first: true,
+    label: "API Key",
+    name: 'api_key',
+    value: settings.api_key
+}) }}
+
+{{ forms.textField({
+    label: "Channel ID",
+    name: 'channel_id',
+    value: settings.channel_id
+}) }}
